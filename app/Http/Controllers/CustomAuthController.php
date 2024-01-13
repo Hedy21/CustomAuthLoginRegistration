@@ -15,6 +15,9 @@ class CustomAuthController extends Controller
     }
 
     public function index(){
+        if(Auth::check()){
+            return redirect('dashboard');
+        }
         return view('login');
     }
 
@@ -32,6 +35,9 @@ class CustomAuthController extends Controller
     }
 
     public function singUp(){
+        if(Auth::check()){
+            return redirect('dashboard');
+        }
         return view('register');
     }
 

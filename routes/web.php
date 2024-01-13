@@ -22,3 +22,5 @@ Route::post('postLogin',[CustomAuthController::class,'login'])->name('postLogin'
 Route::get('register',[CustomAuthController::class,'singUp'])->name('register');
 Route::post('register',[CustomAuthController::class,'register'])->name('postRegister');
 Route::get('signout',[CustomAuthController::class,'signout'])->name('signout');
+
+
